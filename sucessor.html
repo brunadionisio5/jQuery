@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> sucessor </title>
+<script src="jquery.js"></script>
+	
+<script>
+	var n1;
+	$(document).ready(function(){
+		$("#button").click(function(){
+				n1=parseInt($("#n1").val());
+				var resultado = n1+1;
+			$("#resultado").val(resultado);
+		});
+    });
+</script>
+
+</head>
+<body>
+
+	<input type="text" id="n1" value placeholder="insira um valor" />
+	<input type="text" id="resultado" value placeholder="resultado" />	
+	<button id="button"> mostrar sucessor </button>
+
+</body>
+</html>

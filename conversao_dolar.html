@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>conversao real -> dolar</title>
+	<script src="jquery.js"></script>
+
+	<script>
+		var n1;
+		var n2;
+		$(document).ready(function(){
+			$("#button").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*5.2;
+				resp1= parseInt ($("#resp1").val());
+				$("#resultado").val(resultado);
+			});
+		});
+	</script>
+</head>
+<body>
+	
+	<input id="n1" value placeholder="insira um valor em reais" />
+	<input id="resultado" value placeholder="valor em dolares:" />	
+	<button id="button"> converter </button>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nome e idade</title>
+    <script src="jquery.js"></script>
+
+    <script >
+    	$(document).ready(function(){
+        var nome;
+        var nascimento;
+        var anoatual; 
+        var anoint;
+        var nascint;
+        var idade
+         $("button").click(function(){
+          nome = $("#nome").val();
+          anoatual = $ ("#anoatual").val();
+          nascimento = $ ("#nascimento").val();
+          anoint =  parseInt (anoatual);
+          nascint = parseInt (nascimento);
+          idade= anoint-nascint;
+
+          $("p").text(nome+": "+idade );
+
+       });
+      });
+    </script>
+
+</head>
+<body>
+
+  <input type="text" id="nome" placeholder="Insira seu nome">
+  <input type="text" id="nascimento" placeholder="Seu ano de nascimento">
+  <input type="text" id="anoatual" placeholder="Insira o ano atual">
+  <button>Exibir sua idade</button>
+  <p></p>
+
+</body>
+</html>

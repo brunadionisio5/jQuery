@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tabuada</title>
+	<script src="jquery.js"></script>
+
+	<script>
+		var n1;
+		$(document).ready(function(){
+			$("#btn_um").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*1;
+				resp1= parseInt ($("#resp1").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_dois").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*2;
+				resp2= parseInt ($("#resp2").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_tres").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*3;
+				resp3= parseInt ($("#resp3").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_quatro").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*4;
+				resp4= parseInt ($("#resp4").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_cinco").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*5;
+				resp1= parseInt ($("#resp1").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_seis").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*6;
+				resp2= parseInt ($("#resp2").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_sete").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*7;
+				resp3= parseInt ($("#resp3").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_oito").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*8;
+				resp4= parseInt ($("#resp4").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_nove").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*9;
+				resp3= parseInt ($("#resp3").val());
+				$("#resultado").val(resultado);
+			});
+			$("#btn_dez").click(function(){
+					n1=parseInt($("#n1").val());
+					var resultado = n1*10;
+				resp4= parseInt ($("#resp4").val());
+				$("#resultado").val(resultado);
+			});
+		});
+	</script>
+
+</head>
+<body>
+	
+	<input type="text" id="n1" value placeholder="insira um numero">
+	<input type="text" id="resultado" value placeholder="resultado">	
+
+    <br><br>
+	<button id="btn_um"> multiplicar por 1 </button><br>
+	<button id="btn_dois"> multiplicar por 2</button><br>
+	<button id="btn_tres"> multiplicar por 3 </button><br>
+	<button id="btn_quatro"> multiplicar por 4 </button><br>
+	<button id="btn_cinco"> multiplicar por 5 </button><br>
+	<button id="btn_seis"> multiplicar por 6 </button><br>
+	<button id="btn_sete"> multiplicar por 7 </button><br>
+	<button id="btn_oito"> multiplicar por 8 </button><br>
+	<button id="btn_nove"> multiplicar por 9 </button><br>
+	<button id="btn_dez"> multiplicar por 10 </button>
+
+</body>
+</html>
